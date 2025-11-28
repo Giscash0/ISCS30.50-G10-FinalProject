@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.Form1.resources
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.csproj.GenerateResource.cache
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.AssemblyInfo.cs
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\bin\Debug\net10.0-windows\RiseOfThePeasant.exe
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\bin\Debug\net10.0-windows\RiseOfThePeasant.deps.json
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\bin\Debug\net10.0-windows\RiseOfThePeasant.runtimeconfig.json
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\bin\Debug\net10.0-windows\RiseOfThePeasant.dll
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\bin\Debug\net10.0-windows\RiseOfThePeasant.pdb
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.dll
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\refint\RiseOfThePeasant.dll
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.pdb
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\RiseOfThePeasant.genruntimeconfig.cache
+C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\obj\Debug\net10.0-windows\ref\RiseOfThePeasant.dll

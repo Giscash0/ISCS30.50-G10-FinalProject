@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Player>
+  <Money>10</Money>
+  <XP>5</XP>
+  <Level>1</Level>
+  <SuspiciousLevel>0</SuspiciousLevel>
+</Player>
