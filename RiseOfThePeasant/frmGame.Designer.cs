@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pBarXP = new ProgressBar();
             pBarSus = new ProgressBar();
             lblMoney = new Label();
@@ -46,8 +47,8 @@
             lblUpgrade6Lvl = new Label();
             lblUpgrade6Cost = new Label();
             btnUpgrade6 = new Button();
-            lblBribe1Amount = new Label();
-            lblBribe1Cost = new Label();
+            lblPoliceBribeAmount = new Label();
+            lblPoliceBribeCost = new Label();
             btnBribe1 = new Button();
             tabNews = new TabPage();
             lblUpgrade7Description = new Label();
@@ -60,8 +61,8 @@
             lblUpgrade8Lvl = new Label();
             lblUpgrade8Cost = new Label();
             btnUpgrade8 = new Button();
-            label19 = new Label();
-            label20 = new Label();
+            lblNewsBribeAmount = new Label();
+            lblNewsBribeCost = new Label();
             btnBribe2 = new Button();
             tabTrolls = new TabPage();
             lblUpgrade10Description = new Label();
@@ -103,6 +104,9 @@
             label3 = new Label();
             label4 = new Label();
             btnLoad = new Button();
+            tmrProcess = new System.Windows.Forms.Timer(components);
+            lblXPAmount = new Label();
+            lblSusAmount = new Label();
             tabControl1.SuspendLayout();
             tabPolice.SuspendLayout();
             tabNews.SuspendLayout();
@@ -149,6 +153,7 @@
             // optNormal
             // 
             optNormal.AutoSize = true;
+            optNormal.Checked = true;
             optNormal.Location = new Point(304, 309);
             optNormal.Name = "optNormal";
             optNormal.Size = new Size(65, 19);
@@ -156,6 +161,7 @@
             optNormal.TabStop = true;
             optNormal.Text = "Normal";
             optNormal.UseVisualStyleBackColor = true;
+            optNormal.CheckedChanged += optNormal_CheckedChanged;
             // 
             // optIllegal
             // 
@@ -164,9 +170,9 @@
             optIllegal.Name = "optIllegal";
             optIllegal.Size = new Size(56, 19);
             optIllegal.TabIndex = 5;
-            optIllegal.TabStop = true;
             optIllegal.Text = "Illegal";
             optIllegal.UseVisualStyleBackColor = true;
+            optIllegal.CheckedChanged += optIllegal_CheckedChanged;
             // 
             // tabControl1
             // 
@@ -191,8 +197,8 @@
             tabPolice.Controls.Add(lblUpgrade6Lvl);
             tabPolice.Controls.Add(lblUpgrade6Cost);
             tabPolice.Controls.Add(btnUpgrade6);
-            tabPolice.Controls.Add(lblBribe1Amount);
-            tabPolice.Controls.Add(lblBribe1Cost);
+            tabPolice.Controls.Add(lblPoliceBribeAmount);
+            tabPolice.Controls.Add(lblPoliceBribeCost);
             tabPolice.Controls.Add(btnBribe1);
             tabPolice.Location = new Point(4, 24);
             tabPolice.Name = "tabPolice";
@@ -247,6 +253,7 @@
             btnUpgrade5.TabIndex = 20;
             btnUpgrade5.Text = "Upgrade";
             btnUpgrade5.UseVisualStyleBackColor = true;
+            btnUpgrade5.Click += btnUpgrade5_Click;
             // 
             // lblUpgrade6Description
             // 
@@ -293,24 +300,25 @@
             btnUpgrade6.TabIndex = 15;
             btnUpgrade6.Text = "Upgrade";
             btnUpgrade6.UseVisualStyleBackColor = true;
+            btnUpgrade6.Click += btnUpgrade6_Click;
             // 
-            // lblBribe1Amount
+            // lblPoliceBribeAmount
             // 
-            lblBribe1Amount.AutoSize = true;
-            lblBribe1Amount.Location = new Point(73, 73);
-            lblBribe1Amount.Name = "lblBribe1Amount";
-            lblBribe1Amount.Size = new Size(54, 15);
-            lblBribe1Amount.TabIndex = 12;
-            lblBribe1Amount.Text = "Amount:";
+            lblPoliceBribeAmount.AutoSize = true;
+            lblPoliceBribeAmount.Location = new Point(73, 73);
+            lblPoliceBribeAmount.Name = "lblPoliceBribeAmount";
+            lblPoliceBribeAmount.Size = new Size(54, 15);
+            lblPoliceBribeAmount.TabIndex = 12;
+            lblPoliceBribeAmount.Text = "Amount:";
             // 
-            // lblBribe1Cost
+            // lblPoliceBribeCost
             // 
-            lblBribe1Cost.AutoSize = true;
-            lblBribe1Cost.Location = new Point(73, 88);
-            lblBribe1Cost.Name = "lblBribe1Cost";
-            lblBribe1Cost.Size = new Size(34, 15);
-            lblBribe1Cost.TabIndex = 11;
-            lblBribe1Cost.Text = "Cost:";
+            lblPoliceBribeCost.AutoSize = true;
+            lblPoliceBribeCost.Location = new Point(73, 88);
+            lblPoliceBribeCost.Name = "lblPoliceBribeCost";
+            lblPoliceBribeCost.Size = new Size(34, 15);
+            lblPoliceBribeCost.TabIndex = 11;
+            lblPoliceBribeCost.Text = "Cost:";
             // 
             // btnBribe1
             // 
@@ -320,6 +328,7 @@
             btnBribe1.TabIndex = 10;
             btnBribe1.Text = "BRIBE";
             btnBribe1.UseVisualStyleBackColor = true;
+            btnBribe1.Click += btnBribe1_Click;
             // 
             // tabNews
             // 
@@ -333,8 +342,8 @@
             tabNews.Controls.Add(lblUpgrade8Lvl);
             tabNews.Controls.Add(lblUpgrade8Cost);
             tabNews.Controls.Add(btnUpgrade8);
-            tabNews.Controls.Add(label19);
-            tabNews.Controls.Add(label20);
+            tabNews.Controls.Add(lblNewsBribeAmount);
+            tabNews.Controls.Add(lblNewsBribeCost);
             tabNews.Controls.Add(btnBribe2);
             tabNews.Location = new Point(4, 24);
             tabNews.Name = "tabNews";
@@ -389,6 +398,7 @@
             btnUpgrade7.TabIndex = 33;
             btnUpgrade7.Text = "Upgrade";
             btnUpgrade7.UseVisualStyleBackColor = true;
+            btnUpgrade7.Click += btnUpgrade7_Click;
             // 
             // lblUpgrade8Description
             // 
@@ -435,24 +445,25 @@
             btnUpgrade8.TabIndex = 28;
             btnUpgrade8.Text = "Upgrade";
             btnUpgrade8.UseVisualStyleBackColor = true;
+            btnUpgrade8.Click += btnUpgrade8_Click;
             // 
-            // label19
+            // lblNewsBribeAmount
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(70, 71);
-            label19.Name = "label19";
-            label19.Size = new Size(54, 15);
-            label19.TabIndex = 27;
-            label19.Text = "Amount:";
+            lblNewsBribeAmount.AutoSize = true;
+            lblNewsBribeAmount.Location = new Point(70, 71);
+            lblNewsBribeAmount.Name = "lblNewsBribeAmount";
+            lblNewsBribeAmount.Size = new Size(54, 15);
+            lblNewsBribeAmount.TabIndex = 27;
+            lblNewsBribeAmount.Text = "Amount:";
             // 
-            // label20
+            // lblNewsBribeCost
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(70, 86);
-            label20.Name = "label20";
-            label20.Size = new Size(34, 15);
-            label20.TabIndex = 26;
-            label20.Text = "Cost:";
+            lblNewsBribeCost.AutoSize = true;
+            lblNewsBribeCost.Location = new Point(70, 86);
+            lblNewsBribeCost.Name = "lblNewsBribeCost";
+            lblNewsBribeCost.Size = new Size(34, 15);
+            lblNewsBribeCost.TabIndex = 26;
+            lblNewsBribeCost.Text = "Cost:";
             // 
             // btnBribe2
             // 
@@ -462,6 +473,7 @@
             btnBribe2.TabIndex = 25;
             btnBribe2.Text = "BRIBE";
             btnBribe2.UseVisualStyleBackColor = true;
+            btnBribe2.Click += btnBribe2_Click;
             // 
             // tabTrolls
             // 
@@ -527,6 +539,7 @@
             btnUpgrade10.TabIndex = 20;
             btnUpgrade10.Text = "Upgrade";
             btnUpgrade10.UseVisualStyleBackColor = true;
+            btnUpgrade10.Click += btnUpgrade10_Click;
             // 
             // lblUpgrade9Description
             // 
@@ -573,6 +586,7 @@
             btnUpgrade9.TabIndex = 15;
             btnUpgrade9.Text = "Upgrade";
             btnUpgrade9.UseVisualStyleBackColor = true;
+            btnUpgrade9.Click += btnUpgrade9_Click;
             // 
             // tabControl2
             // 
@@ -649,6 +663,7 @@
             btnUpgrade2.TabIndex = 5;
             btnUpgrade2.Text = "Upgrade";
             btnUpgrade2.UseVisualStyleBackColor = true;
+            btnUpgrade2.Click += btnUpgrade2_Click;
             // 
             // lblUpgrade1Description
             // 
@@ -695,6 +710,7 @@
             btnUpgrade1.TabIndex = 0;
             btnUpgrade1.Text = "Upgrade";
             btnUpgrade1.UseVisualStyleBackColor = true;
+            btnUpgrade1.Click += btnUpgrade1_Click;
             // 
             // tabHelper
             // 
@@ -761,6 +777,7 @@
             btnUpgrade4.TabIndex = 10;
             btnUpgrade4.Text = "Upgrade";
             btnUpgrade4.UseVisualStyleBackColor = true;
+            btnUpgrade4.Click += btnUpgrade4_Click;
             // 
             // lblUpgrade3Description
             // 
@@ -807,6 +824,7 @@
             btnUpgrade3.TabIndex = 5;
             btnUpgrade3.Text = "Upgrade";
             btnUpgrade3.UseVisualStyleBackColor = true;
+            btnUpgrade3.Click += btnUpgrade3_Click;
             // 
             // btnSave
             // 
@@ -864,12 +882,38 @@
             btnLoad.Text = "Load";
             btnLoad.UseVisualStyleBackColor = true;
             // 
+            // tmrProcess
+            // 
+            tmrProcess.Enabled = true;
+            tmrProcess.Interval = 10;
+            tmrProcess.Tick += tmrProcess_Tick;
+            // 
+            // lblXPAmount
+            // 
+            lblXPAmount.Location = new Point(101, 83);
+            lblXPAmount.Name = "lblXPAmount";
+            lblXPAmount.Size = new Size(659, 23);
+            lblXPAmount.TabIndex = 15;
+            lblXPAmount.Text = "0/10";
+            lblXPAmount.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblSusAmount
+            // 
+            lblSusAmount.Location = new Point(101, 148);
+            lblSusAmount.Name = "lblSusAmount";
+            lblSusAmount.Size = new Size(659, 23);
+            lblSusAmount.TabIndex = 16;
+            lblSusAmount.Text = "0/10";
+            lblSusAmount.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // frmGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(784, 561);
+            Controls.Add(lblSusAmount);
+            Controls.Add(lblXPAmount);
             Controls.Add(btnLoad);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -945,8 +989,8 @@
         private Label lblUpgrade2Lvl;
         private Label lblUpgrade2Cost;
         private Button btnUpgrade2;
-        private Label lblBribe1Amount;
-        private Label lblBribe1Cost;
+        private Label lblPoliceBribeAmount;
+        private Label lblPoliceBribeCost;
         private Button btnBribe1;
         private Label lblUpgrade5Description;
         private Label lblUpgrade5Title;
@@ -968,8 +1012,8 @@
         private Label lblUpgrade8Lvl;
         private Label lblUpgrade8Cost;
         private Button btnUpgrade8;
-        private Label label19;
-        private Label label20;
+        private Label lblNewsBribeAmount;
+        private Label lblNewsBribeCost;
         private Button btnBribe2;
         private Label lblUpgrade10Description;
         private Label lblUpgrade10Title;
@@ -981,5 +1025,8 @@
         private Label lblUpgrade9Lvl;
         private Label lblUpgrade9Cost;
         private Button btnUpgrade9;
+        private System.Windows.Forms.Timer tmrProcess;
+        private Label lblXPAmount;
+        private Label lblSusAmount;
     }
 }

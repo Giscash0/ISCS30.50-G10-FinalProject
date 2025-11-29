@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{29C2BE04-AA4D-9A65-0344-260237541195}|RiseOfThePeasant\\RiseOfThePeasant.csproj|solutionrelative:riseofthepeasant\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29C2BE04-AA4D-9A65-0344-260237541195}|RiseOfThePeasant\\RiseOfThePeasant.csproj|c:\\users\\johan\\documents\\ateneo\\iscs 30.50\\finalproject\\riseofthepeasant\\frmgame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29C2BE04-AA4D-9A65-0344-260237541195}|RiseOfThePeasant\\RiseOfThePeasant.csproj|solutionrelative:riseofthepeasant\\frmgame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29C2BE04-AA4D-9A65-0344-260237541195}|RiseOfThePeasant\\RiseOfThePeasant.csproj|c:\\users\\johan\\documents\\ateneo\\iscs 30.50\\finalproject\\riseofthepeasant\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29C2BE04-AA4D-9A65-0344-260237541195}|RiseOfThePeasant\\RiseOfThePeasant.csproj|solutionrelative:riseofthepeasant\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,31 +37,44 @@
               "ToolTip": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\frmGame.cs [Design]",
               "RelativeToolTip": "RiseOfThePeasant\\frmGame.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:21:49.053Z",
+              "WhenOpened": "2025-11-29T08:16:42.989Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "frmGame.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\frmGame.Designer.cs",
+              "RelativeDocumentMoniker": "RiseOfThePeasant\\frmGame.Designer.cs",
+              "ToolTip": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\frmGame.Designer.cs",
+              "RelativeToolTip": "RiseOfThePeasant\\frmGame.Designer.cs",
+              "ViewState": "AgIAAO4CAAAAAAAAAAAtwA8DAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:44:03.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\MainForm.cs",
               "RelativeDocumentMoniker": "RiseOfThePeasant\\MainForm.cs",
               "ToolTip": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\MainForm.cs",
               "RelativeToolTip": "RiseOfThePeasant\\MainForm.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAYwLcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-29T07:22:06.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmGame.cs",
               "DocumentMoniker": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\frmGame.cs",
               "RelativeDocumentMoniker": "RiseOfThePeasant\\frmGame.cs",
               "ToolTip": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\frmGame.cs",
               "RelativeToolTip": "RiseOfThePeasant\\frmGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwEEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-29T07:21:43.377Z",
               "EditorCaption": ""

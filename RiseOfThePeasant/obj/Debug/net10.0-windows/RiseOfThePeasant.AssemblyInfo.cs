@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RiseOfThePeasant")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7cd4d89c49c8cfa768bcf840617dee53865f5db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9454392a92060ed7fcc04a378141ff13d546224c")]
 [assembly: System.Reflection.AssemblyProductAttribute("RiseOfThePeasant")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RiseOfThePeasant")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
