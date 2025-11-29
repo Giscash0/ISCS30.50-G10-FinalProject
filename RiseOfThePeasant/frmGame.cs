@@ -14,7 +14,7 @@ namespace RiseOfThePeasant
         private double money = 0;
         private int level = 1;
         private double xp = 0;
-        private double xpMax = 100;
+        private double xpMax = 10;
         private double suspicion = 0;
         private bool isWorkingIllegally = false;
 
@@ -39,10 +39,10 @@ namespace RiseOfThePeasant
 
         // Game constants
         private double baseMoneyPerClick = 1;
-        private double baseSusPerClick = 5;
+        private double baseSusPerClick = 2;
         private double moneyMultiplierPerLevel = 0.5;
-        private double xpPerClick = 5;
-        private double suspicionIncreaseRate = 2;
+        private double xpPerClick = 1;
+        private double suspicionIncreaseRate = 1;
 
         // Floating text
         private List<FloatingText> floatingTexts = new List<FloatingText>();
@@ -82,30 +82,30 @@ namespace RiseOfThePeasant
             double moneyGain = baseMoneyPerClick * level * moneyMultiplierPerLevel;
             if (isWorkingIllegally)
             {
-                suspicion += baseSusPerClick * level;
+                suspicion += baseSusPerClick;
                 moneyGain *= 3;
             }
             money += moneyGain;
             xp += xpPerClick;
 
-            // update UI
-            xpBar.Value = Math.Min((int)(xp / xpMax * 100), 100);
-
-            AddFloatingText($"+${Math.Round(moneyGain, 2)}", Color.Gold, new PointF(btnWork.Left + 50, btnWork.Top - 20));
-
-            CheckLevelUp();
-            isCaught();
-        }
-
-        private void CheckLevelUp()
-        {
             if (xp >= xpMax)
             {
                 xp = 0;
                 level++;
+                xpMax += 10;
+                xpBar.Maximum = (int)xpMax;
                 AddFloatingText("LEVEL UP!", Color.Cyan, new PointF(btnWork.Left + 50, btnWork.Top - 60));
                 UpdateClickButtonColor();
             }
+
+            // update UI
+            lblXPAmount.Text = $"{Math.Floor(xp)}/{xpMax}";
+            lblXPLvl.Text = $"Lvl {level}";
+            xpBar.Value = Math.Min((int)xp, 100);
+
+            AddFloatingText($"+${Math.Round(moneyGain, 2)}", Color.Gold, new PointF(btnWork.Left + 50, btnWork.Top - 20));
+
+            isCaught();
         }
 
         private void UpdateClickButtonColor()
@@ -231,7 +231,7 @@ namespace RiseOfThePeasant
         {
             if (isUpgradeable(3))
             {
-                helperMoneyGenerated *= 1.2;
+                helperMoneyGenerated *= 1.01;
             }
         }
         private void btnUpgrade5_Click(object sender, EventArgs e)
@@ -277,7 +277,7 @@ namespace RiseOfThePeasant
         {
             if (isUpgradeable(9))
             {
-                trollSusReduced *= 1.2;
+                trollSusReduced *= 1.01;
             }
         }
 

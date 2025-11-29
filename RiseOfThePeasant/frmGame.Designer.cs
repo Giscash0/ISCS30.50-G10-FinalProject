@@ -125,6 +125,7 @@
             // 
             // susBar
             // 
+            susBar.ForeColor = Color.FromArgb(192, 0, 0);
             susBar.Location = new Point(101, 127);
             susBar.Name = "susBar";
             susBar.Size = new Size(659, 25);
@@ -133,6 +134,7 @@
             // lblMoney
             // 
             lblMoney.Font = new Font("Segoe UI", 25F);
+            lblMoney.ForeColor = Color.FromArgb(0, 192, 0);
             lblMoney.Location = new Point(288, 186);
             lblMoney.Name = "lblMoney";
             lblMoney.Size = new Size(216, 76);
@@ -142,18 +144,21 @@
             // 
             // btnWork
             // 
+            btnWork.BackColor = Color.Gray;
+            btnWork.ForeColor = Color.White;
             btnWork.Location = new Point(314, 349);
             btnWork.Name = "btnWork";
             btnWork.Size = new Size(156, 84);
             btnWork.TabIndex = 3;
             btnWork.Text = "WORK";
-            btnWork.UseVisualStyleBackColor = true;
+            btnWork.UseVisualStyleBackColor = false;
             btnWork.Click += btnWork_Click;
             // 
             // optNormal
             // 
             optNormal.AutoSize = true;
             optNormal.Checked = true;
+            optNormal.ForeColor = Color.White;
             optNormal.Location = new Point(304, 309);
             optNormal.Name = "optNormal";
             optNormal.Size = new Size(65, 19);
@@ -166,6 +171,7 @@
             // optIllegal
             // 
             optIllegal.AutoSize = true;
+            optIllegal.ForeColor = Color.White;
             optIllegal.Location = new Point(430, 309);
             optIllegal.Name = "optIllegal";
             optIllegal.Size = new Size(56, 19);
@@ -187,6 +193,7 @@
             // 
             // tabPolice
             // 
+            tabPolice.BackColor = Color.FromArgb(50, 50, 50);
             tabPolice.Controls.Add(lblUpgrade5Description);
             tabPolice.Controls.Add(lblUpgrade5Title);
             tabPolice.Controls.Add(lblUpgrade5Lvl);
@@ -206,11 +213,11 @@
             tabPolice.Size = new Size(254, 303);
             tabPolice.TabIndex = 0;
             tabPolice.Text = "Police";
-            tabPolice.UseVisualStyleBackColor = true;
             // 
             // lblUpgrade5Description
             // 
             lblUpgrade5Description.AutoSize = true;
+            lblUpgrade5Description.ForeColor = Color.White;
             lblUpgrade5Description.Location = new Point(33, 178);
             lblUpgrade5Description.Name = "lblUpgrade5Description";
             lblUpgrade5Description.Size = new Size(143, 15);
@@ -221,6 +228,7 @@
             // 
             lblUpgrade5Title.AutoSize = true;
             lblUpgrade5Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade5Title.ForeColor = Color.White;
             lblUpgrade5Title.Location = new Point(33, 119);
             lblUpgrade5Title.Name = "lblUpgrade5Title";
             lblUpgrade5Title.Size = new Size(66, 20);
@@ -230,6 +238,7 @@
             // lblUpgrade5Lvl
             // 
             lblUpgrade5Lvl.AutoSize = true;
+            lblUpgrade5Lvl.ForeColor = Color.White;
             lblUpgrade5Lvl.Location = new Point(33, 145);
             lblUpgrade5Lvl.Name = "lblUpgrade5Lvl";
             lblUpgrade5Lvl.Size = new Size(24, 15);
@@ -239,6 +248,7 @@
             // lblUpgrade5Cost
             // 
             lblUpgrade5Cost.AutoSize = true;
+            lblUpgrade5Cost.ForeColor = Color.White;
             lblUpgrade5Cost.Location = new Point(33, 160);
             lblUpgrade5Cost.Name = "lblUpgrade5Cost";
             lblUpgrade5Cost.Size = new Size(34, 15);
@@ -247,17 +257,20 @@
             // 
             // btnUpgrade5
             // 
+            btnUpgrade5.BackColor = Color.Teal;
+            btnUpgrade5.ForeColor = Color.White;
             btnUpgrade5.Location = new Point(135, 119);
             btnUpgrade5.Name = "btnUpgrade5";
             btnUpgrade5.Size = new Size(92, 56);
             btnUpgrade5.TabIndex = 20;
             btnUpgrade5.Text = "Upgrade";
-            btnUpgrade5.UseVisualStyleBackColor = true;
+            btnUpgrade5.UseVisualStyleBackColor = false;
             btnUpgrade5.Click += btnUpgrade5_Click;
             // 
             // lblUpgrade6Description
             // 
             lblUpgrade6Description.AutoSize = true;
+            lblUpgrade6Description.ForeColor = Color.White;
             lblUpgrade6Description.Location = new Point(33, 274);
             lblUpgrade6Description.Name = "lblUpgrade6Description";
             lblUpgrade6Description.Size = new Size(119, 15);
@@ -268,6 +281,7 @@
             // 
             lblUpgrade6Title.AutoSize = true;
             lblUpgrade6Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade6Title.ForeColor = Color.White;
             lblUpgrade6Title.Location = new Point(33, 215);
             lblUpgrade6Title.Name = "lblUpgrade6Title";
             lblUpgrade6Title.Size = new Size(67, 20);
@@ -277,6 +291,7 @@
             // lblUpgrade6Lvl
             // 
             lblUpgrade6Lvl.AutoSize = true;
+            lblUpgrade6Lvl.ForeColor = Color.White;
             lblUpgrade6Lvl.Location = new Point(33, 241);
             lblUpgrade6Lvl.Name = "lblUpgrade6Lvl";
             lblUpgrade6Lvl.Size = new Size(24, 15);
@@ -286,6 +301,7 @@
             // lblUpgrade6Cost
             // 
             lblUpgrade6Cost.AutoSize = true;
+            lblUpgrade6Cost.ForeColor = Color.White;
             lblUpgrade6Cost.Location = new Point(33, 256);
             lblUpgrade6Cost.Name = "lblUpgrade6Cost";
             lblUpgrade6Cost.Size = new Size(34, 15);
@@ -294,17 +310,20 @@
             // 
             // btnUpgrade6
             // 
+            btnUpgrade6.BackColor = Color.Teal;
+            btnUpgrade6.ForeColor = Color.White;
             btnUpgrade6.Location = new Point(135, 215);
             btnUpgrade6.Name = "btnUpgrade6";
             btnUpgrade6.Size = new Size(92, 56);
             btnUpgrade6.TabIndex = 15;
             btnUpgrade6.Text = "Upgrade";
-            btnUpgrade6.UseVisualStyleBackColor = true;
+            btnUpgrade6.UseVisualStyleBackColor = false;
             btnUpgrade6.Click += btnUpgrade6_Click;
             // 
             // lblPoliceBribeAmount
             // 
             lblPoliceBribeAmount.AutoSize = true;
+            lblPoliceBribeAmount.ForeColor = Color.White;
             lblPoliceBribeAmount.Location = new Point(73, 73);
             lblPoliceBribeAmount.Name = "lblPoliceBribeAmount";
             lblPoliceBribeAmount.Size = new Size(54, 15);
@@ -314,6 +333,7 @@
             // lblPoliceBribeCost
             // 
             lblPoliceBribeCost.AutoSize = true;
+            lblPoliceBribeCost.ForeColor = Color.White;
             lblPoliceBribeCost.Location = new Point(73, 88);
             lblPoliceBribeCost.Name = "lblPoliceBribeCost";
             lblPoliceBribeCost.Size = new Size(34, 15);
@@ -322,16 +342,19 @@
             // 
             // btnPoliceBribe
             // 
+            btnPoliceBribe.BackColor = Color.FromArgb(192, 0, 0);
+            btnPoliceBribe.ForeColor = Color.White;
             btnPoliceBribe.Location = new Point(73, 18);
             btnPoliceBribe.Name = "btnPoliceBribe";
             btnPoliceBribe.Size = new Size(112, 51);
             btnPoliceBribe.TabIndex = 10;
             btnPoliceBribe.Text = "BRIBE";
-            btnPoliceBribe.UseVisualStyleBackColor = true;
+            btnPoliceBribe.UseVisualStyleBackColor = false;
             btnPoliceBribe.Click += btnPoliceBribe_Click;
             // 
             // tabNews
             // 
+            tabNews.BackColor = Color.FromArgb(50, 50, 50);
             tabNews.Controls.Add(lblUpgrade7Description);
             tabNews.Controls.Add(lblUpgrade7Title);
             tabNews.Controls.Add(lblUpgrade7Lvl);
@@ -351,11 +374,11 @@
             tabNews.Size = new Size(254, 303);
             tabNews.TabIndex = 1;
             tabNews.Text = "News";
-            tabNews.UseVisualStyleBackColor = true;
             // 
             // lblUpgrade7Description
             // 
             lblUpgrade7Description.AutoSize = true;
+            lblUpgrade7Description.ForeColor = Color.White;
             lblUpgrade7Description.Location = new Point(30, 176);
             lblUpgrade7Description.Name = "lblUpgrade7Description";
             lblUpgrade7Description.Size = new Size(143, 15);
@@ -366,6 +389,7 @@
             // 
             lblUpgrade7Title.AutoSize = true;
             lblUpgrade7Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade7Title.ForeColor = Color.White;
             lblUpgrade7Title.Location = new Point(30, 117);
             lblUpgrade7Title.Name = "lblUpgrade7Title";
             lblUpgrade7Title.Size = new Size(66, 20);
@@ -375,6 +399,7 @@
             // lblUpgrade7Lvl
             // 
             lblUpgrade7Lvl.AutoSize = true;
+            lblUpgrade7Lvl.ForeColor = Color.White;
             lblUpgrade7Lvl.Location = new Point(30, 143);
             lblUpgrade7Lvl.Name = "lblUpgrade7Lvl";
             lblUpgrade7Lvl.Size = new Size(24, 15);
@@ -384,6 +409,7 @@
             // lblUpgrade7Cost
             // 
             lblUpgrade7Cost.AutoSize = true;
+            lblUpgrade7Cost.ForeColor = Color.White;
             lblUpgrade7Cost.Location = new Point(30, 158);
             lblUpgrade7Cost.Name = "lblUpgrade7Cost";
             lblUpgrade7Cost.Size = new Size(34, 15);
@@ -392,17 +418,20 @@
             // 
             // btnUpgrade7
             // 
+            btnUpgrade7.BackColor = Color.Teal;
+            btnUpgrade7.ForeColor = Color.White;
             btnUpgrade7.Location = new Point(132, 117);
             btnUpgrade7.Name = "btnUpgrade7";
             btnUpgrade7.Size = new Size(92, 56);
             btnUpgrade7.TabIndex = 33;
             btnUpgrade7.Text = "Upgrade";
-            btnUpgrade7.UseVisualStyleBackColor = true;
+            btnUpgrade7.UseVisualStyleBackColor = false;
             btnUpgrade7.Click += btnUpgrade7_Click;
             // 
             // lblUpgrade8Description
             // 
             lblUpgrade8Description.AutoSize = true;
+            lblUpgrade8Description.ForeColor = Color.White;
             lblUpgrade8Description.Location = new Point(30, 272);
             lblUpgrade8Description.Name = "lblUpgrade8Description";
             lblUpgrade8Description.Size = new Size(119, 15);
@@ -413,6 +442,7 @@
             // 
             lblUpgrade8Title.AutoSize = true;
             lblUpgrade8Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade8Title.ForeColor = Color.White;
             lblUpgrade8Title.Location = new Point(30, 213);
             lblUpgrade8Title.Name = "lblUpgrade8Title";
             lblUpgrade8Title.Size = new Size(67, 20);
@@ -422,6 +452,7 @@
             // lblUpgrade8Lvl
             // 
             lblUpgrade8Lvl.AutoSize = true;
+            lblUpgrade8Lvl.ForeColor = Color.White;
             lblUpgrade8Lvl.Location = new Point(30, 239);
             lblUpgrade8Lvl.Name = "lblUpgrade8Lvl";
             lblUpgrade8Lvl.Size = new Size(24, 15);
@@ -431,6 +462,7 @@
             // lblUpgrade8Cost
             // 
             lblUpgrade8Cost.AutoSize = true;
+            lblUpgrade8Cost.ForeColor = Color.White;
             lblUpgrade8Cost.Location = new Point(30, 254);
             lblUpgrade8Cost.Name = "lblUpgrade8Cost";
             lblUpgrade8Cost.Size = new Size(34, 15);
@@ -439,17 +471,20 @@
             // 
             // btnUpgrade8
             // 
+            btnUpgrade8.BackColor = Color.Teal;
+            btnUpgrade8.ForeColor = Color.White;
             btnUpgrade8.Location = new Point(132, 213);
             btnUpgrade8.Name = "btnUpgrade8";
             btnUpgrade8.Size = new Size(92, 56);
             btnUpgrade8.TabIndex = 28;
             btnUpgrade8.Text = "Upgrade";
-            btnUpgrade8.UseVisualStyleBackColor = true;
+            btnUpgrade8.UseVisualStyleBackColor = false;
             btnUpgrade8.Click += btnUpgrade8_Click;
             // 
             // lblNewsBribeAmount
             // 
             lblNewsBribeAmount.AutoSize = true;
+            lblNewsBribeAmount.ForeColor = Color.White;
             lblNewsBribeAmount.Location = new Point(70, 71);
             lblNewsBribeAmount.Name = "lblNewsBribeAmount";
             lblNewsBribeAmount.Size = new Size(54, 15);
@@ -459,6 +494,7 @@
             // lblNewsBribeCost
             // 
             lblNewsBribeCost.AutoSize = true;
+            lblNewsBribeCost.ForeColor = Color.White;
             lblNewsBribeCost.Location = new Point(70, 86);
             lblNewsBribeCost.Name = "lblNewsBribeCost";
             lblNewsBribeCost.Size = new Size(34, 15);
@@ -467,16 +503,19 @@
             // 
             // btnNewsBribe
             // 
+            btnNewsBribe.BackColor = Color.FromArgb(192, 0, 0);
+            btnNewsBribe.ForeColor = Color.White;
             btnNewsBribe.Location = new Point(70, 16);
             btnNewsBribe.Name = "btnNewsBribe";
             btnNewsBribe.Size = new Size(112, 51);
             btnNewsBribe.TabIndex = 25;
             btnNewsBribe.Text = "BRIBE";
-            btnNewsBribe.UseVisualStyleBackColor = true;
+            btnNewsBribe.UseVisualStyleBackColor = false;
             btnNewsBribe.Click += btnNewsBribe_Click;
             // 
             // tabTrolls
             // 
+            tabTrolls.BackColor = Color.FromArgb(50, 50, 50);
             tabTrolls.Controls.Add(lblUpgrade10Description);
             tabTrolls.Controls.Add(lblUpgrade10Title);
             tabTrolls.Controls.Add(lblUpgrade10Lvl);
@@ -492,11 +531,11 @@
             tabTrolls.Size = new Size(254, 303);
             tabTrolls.TabIndex = 2;
             tabTrolls.Text = "Trolls";
-            tabTrolls.UseVisualStyleBackColor = true;
             // 
             // lblUpgrade10Description
             // 
             lblUpgrade10Description.AutoSize = true;
+            lblUpgrade10Description.ForeColor = Color.White;
             lblUpgrade10Description.Location = new Point(15, 252);
             lblUpgrade10Description.Name = "lblUpgrade10Description";
             lblUpgrade10Description.Size = new Size(147, 15);
@@ -507,6 +546,7 @@
             // 
             lblUpgrade10Title.AutoSize = true;
             lblUpgrade10Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade10Title.ForeColor = Color.White;
             lblUpgrade10Title.Location = new Point(21, 174);
             lblUpgrade10Title.Name = "lblUpgrade10Title";
             lblUpgrade10Title.Size = new Size(80, 20);
@@ -516,6 +556,7 @@
             // lblUpgrade10Lvl
             // 
             lblUpgrade10Lvl.AutoSize = true;
+            lblUpgrade10Lvl.ForeColor = Color.White;
             lblUpgrade10Lvl.Location = new Point(21, 200);
             lblUpgrade10Lvl.Name = "lblUpgrade10Lvl";
             lblUpgrade10Lvl.Size = new Size(24, 15);
@@ -525,6 +566,7 @@
             // lblUpgrade10Cost
             // 
             lblUpgrade10Cost.AutoSize = true;
+            lblUpgrade10Cost.ForeColor = Color.White;
             lblUpgrade10Cost.Location = new Point(21, 215);
             lblUpgrade10Cost.Name = "lblUpgrade10Cost";
             lblUpgrade10Cost.Size = new Size(34, 15);
@@ -533,17 +575,20 @@
             // 
             // btnUpgrade10
             // 
+            btnUpgrade10.BackColor = Color.Teal;
+            btnUpgrade10.ForeColor = Color.White;
             btnUpgrade10.Location = new Point(123, 174);
             btnUpgrade10.Name = "btnUpgrade10";
             btnUpgrade10.Size = new Size(114, 66);
             btnUpgrade10.TabIndex = 20;
             btnUpgrade10.Text = "Upgrade";
-            btnUpgrade10.UseVisualStyleBackColor = true;
+            btnUpgrade10.UseVisualStyleBackColor = false;
             btnUpgrade10.Click += btnUpgrade10_Click;
             // 
             // lblUpgrade9Description
             // 
             lblUpgrade9Description.AutoSize = true;
+            lblUpgrade9Description.ForeColor = Color.White;
             lblUpgrade9Description.Location = new Point(15, 113);
             lblUpgrade9Description.Name = "lblUpgrade9Description";
             lblUpgrade9Description.Size = new Size(195, 15);
@@ -554,6 +599,7 @@
             // 
             lblUpgrade9Title.AutoSize = true;
             lblUpgrade9Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade9Title.ForeColor = Color.White;
             lblUpgrade9Title.Location = new Point(21, 35);
             lblUpgrade9Title.Name = "lblUpgrade9Title";
             lblUpgrade9Title.Size = new Size(76, 20);
@@ -563,6 +609,7 @@
             // lblUpgrade9Lvl
             // 
             lblUpgrade9Lvl.AutoSize = true;
+            lblUpgrade9Lvl.ForeColor = Color.White;
             lblUpgrade9Lvl.Location = new Point(21, 61);
             lblUpgrade9Lvl.Name = "lblUpgrade9Lvl";
             lblUpgrade9Lvl.Size = new Size(24, 15);
@@ -572,6 +619,7 @@
             // lblUpgrade9Cost
             // 
             lblUpgrade9Cost.AutoSize = true;
+            lblUpgrade9Cost.ForeColor = Color.White;
             lblUpgrade9Cost.Location = new Point(21, 76);
             lblUpgrade9Cost.Name = "lblUpgrade9Cost";
             lblUpgrade9Cost.Size = new Size(34, 15);
@@ -580,12 +628,14 @@
             // 
             // btnUpgrade9
             // 
+            btnUpgrade9.BackColor = Color.Teal;
+            btnUpgrade9.ForeColor = Color.White;
             btnUpgrade9.Location = new Point(123, 35);
             btnUpgrade9.Name = "btnUpgrade9";
             btnUpgrade9.Size = new Size(114, 66);
             btnUpgrade9.TabIndex = 15;
             btnUpgrade9.Text = "Upgrade";
-            btnUpgrade9.UseVisualStyleBackColor = true;
+            btnUpgrade9.UseVisualStyleBackColor = false;
             btnUpgrade9.Click += btnUpgrade9_Click;
             // 
             // tabControl2
@@ -600,6 +650,7 @@
             // 
             // tabWork
             // 
+            tabWork.BackColor = Color.FromArgb(50, 50, 50);
             tabWork.Controls.Add(lblUpgrade2Description);
             tabWork.Controls.Add(lblUpgrade2Title);
             tabWork.Controls.Add(lblUpgrade2Lvl);
@@ -616,11 +667,11 @@
             tabWork.Size = new Size(254, 303);
             tabWork.TabIndex = 0;
             tabWork.Text = "Work Upgrades";
-            tabWork.UseVisualStyleBackColor = true;
             // 
             // lblUpgrade2Description
             // 
             lblUpgrade2Description.AutoSize = true;
+            lblUpgrade2Description.ForeColor = Color.White;
             lblUpgrade2Description.Location = new Point(10, 251);
             lblUpgrade2Description.Name = "lblUpgrade2Description";
             lblUpgrade2Description.Size = new Size(229, 15);
@@ -631,6 +682,7 @@
             // 
             lblUpgrade2Title.AutoSize = true;
             lblUpgrade2Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade2Title.ForeColor = Color.White;
             lblUpgrade2Title.Location = new Point(16, 173);
             lblUpgrade2Title.Name = "lblUpgrade2Title";
             lblUpgrade2Title.Size = new Size(101, 20);
@@ -640,6 +692,7 @@
             // lblUpgrade2Lvl
             // 
             lblUpgrade2Lvl.AutoSize = true;
+            lblUpgrade2Lvl.ForeColor = Color.White;
             lblUpgrade2Lvl.Location = new Point(16, 199);
             lblUpgrade2Lvl.Name = "lblUpgrade2Lvl";
             lblUpgrade2Lvl.Size = new Size(24, 15);
@@ -649,6 +702,7 @@
             // lblUpgrade2Cost
             // 
             lblUpgrade2Cost.AutoSize = true;
+            lblUpgrade2Cost.ForeColor = Color.White;
             lblUpgrade2Cost.Location = new Point(16, 214);
             lblUpgrade2Cost.Name = "lblUpgrade2Cost";
             lblUpgrade2Cost.Size = new Size(34, 15);
@@ -657,17 +711,20 @@
             // 
             // btnUpgrade2
             // 
+            btnUpgrade2.BackColor = Color.Teal;
+            btnUpgrade2.ForeColor = Color.White;
             btnUpgrade2.Location = new Point(118, 173);
             btnUpgrade2.Name = "btnUpgrade2";
             btnUpgrade2.Size = new Size(114, 66);
             btnUpgrade2.TabIndex = 5;
             btnUpgrade2.Text = "Upgrade";
-            btnUpgrade2.UseVisualStyleBackColor = true;
+            btnUpgrade2.UseVisualStyleBackColor = false;
             btnUpgrade2.Click += btnUpgrade2_Click;
             // 
             // lblUpgrade1Description
             // 
             lblUpgrade1Description.AutoSize = true;
+            lblUpgrade1Description.ForeColor = Color.White;
             lblUpgrade1Description.Location = new Point(10, 106);
             lblUpgrade1Description.Name = "lblUpgrade1Description";
             lblUpgrade1Description.Size = new Size(150, 15);
@@ -678,6 +735,7 @@
             // 
             lblUpgrade1Title.AutoSize = true;
             lblUpgrade1Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade1Title.ForeColor = Color.White;
             lblUpgrade1Title.Location = new Point(16, 28);
             lblUpgrade1Title.Name = "lblUpgrade1Title";
             lblUpgrade1Title.Size = new Size(93, 20);
@@ -687,6 +745,7 @@
             // lblUpgrade1Lvl
             // 
             lblUpgrade1Lvl.AutoSize = true;
+            lblUpgrade1Lvl.ForeColor = Color.White;
             lblUpgrade1Lvl.Location = new Point(16, 54);
             lblUpgrade1Lvl.Name = "lblUpgrade1Lvl";
             lblUpgrade1Lvl.Size = new Size(24, 15);
@@ -696,6 +755,7 @@
             // lblUpgrade1Cost
             // 
             lblUpgrade1Cost.AutoSize = true;
+            lblUpgrade1Cost.ForeColor = Color.White;
             lblUpgrade1Cost.Location = new Point(16, 69);
             lblUpgrade1Cost.Name = "lblUpgrade1Cost";
             lblUpgrade1Cost.Size = new Size(34, 15);
@@ -704,16 +764,19 @@
             // 
             // btnUpgrade1
             // 
+            btnUpgrade1.BackColor = Color.Teal;
+            btnUpgrade1.ForeColor = Color.White;
             btnUpgrade1.Location = new Point(118, 28);
             btnUpgrade1.Name = "btnUpgrade1";
             btnUpgrade1.Size = new Size(114, 66);
             btnUpgrade1.TabIndex = 0;
             btnUpgrade1.Text = "Upgrade";
-            btnUpgrade1.UseVisualStyleBackColor = true;
+            btnUpgrade1.UseVisualStyleBackColor = false;
             btnUpgrade1.Click += btnUpgrade1_Click;
             // 
             // tabHelper
             // 
+            tabHelper.BackColor = Color.FromArgb(50, 50, 50);
             tabHelper.Controls.Add(lblUpgrade4Description);
             tabHelper.Controls.Add(lblUpgrade4Title);
             tabHelper.Controls.Add(lblUpgrade4Lvl);
@@ -730,11 +793,11 @@
             tabHelper.Size = new Size(254, 303);
             tabHelper.TabIndex = 1;
             tabHelper.Text = "Helper";
-            tabHelper.UseVisualStyleBackColor = true;
             // 
             // lblUpgrade4Description
             // 
             lblUpgrade4Description.AutoSize = true;
+            lblUpgrade4Description.ForeColor = Color.White;
             lblUpgrade4Description.Location = new Point(9, 249);
             lblUpgrade4Description.Name = "lblUpgrade4Description";
             lblUpgrade4Description.Size = new Size(172, 15);
@@ -745,6 +808,7 @@
             // 
             lblUpgrade4Title.AutoSize = true;
             lblUpgrade4Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade4Title.ForeColor = Color.White;
             lblUpgrade4Title.Location = new Point(15, 171);
             lblUpgrade4Title.Name = "lblUpgrade4Title";
             lblUpgrade4Title.Size = new Size(90, 20);
@@ -754,6 +818,7 @@
             // lblUpgrade4Lvl
             // 
             lblUpgrade4Lvl.AutoSize = true;
+            lblUpgrade4Lvl.ForeColor = Color.White;
             lblUpgrade4Lvl.Location = new Point(15, 197);
             lblUpgrade4Lvl.Name = "lblUpgrade4Lvl";
             lblUpgrade4Lvl.Size = new Size(24, 15);
@@ -763,6 +828,7 @@
             // lblUpgrade4Cost
             // 
             lblUpgrade4Cost.AutoSize = true;
+            lblUpgrade4Cost.ForeColor = Color.White;
             lblUpgrade4Cost.Location = new Point(15, 212);
             lblUpgrade4Cost.Name = "lblUpgrade4Cost";
             lblUpgrade4Cost.Size = new Size(34, 15);
@@ -771,17 +837,20 @@
             // 
             // btnUpgrade4
             // 
+            btnUpgrade4.BackColor = Color.Teal;
+            btnUpgrade4.ForeColor = Color.White;
             btnUpgrade4.Location = new Point(117, 171);
             btnUpgrade4.Name = "btnUpgrade4";
             btnUpgrade4.Size = new Size(114, 66);
             btnUpgrade4.TabIndex = 10;
             btnUpgrade4.Text = "Upgrade";
-            btnUpgrade4.UseVisualStyleBackColor = true;
+            btnUpgrade4.UseVisualStyleBackColor = false;
             btnUpgrade4.Click += btnUpgrade4_Click;
             // 
             // lblUpgrade3Description
             // 
             lblUpgrade3Description.AutoSize = true;
+            lblUpgrade3Description.ForeColor = Color.White;
             lblUpgrade3Description.Location = new Point(9, 110);
             lblUpgrade3Description.Name = "lblUpgrade3Description";
             lblUpgrade3Description.Size = new Size(224, 15);
@@ -792,6 +861,7 @@
             // 
             lblUpgrade3Title.AutoSize = true;
             lblUpgrade3Title.Font = new Font("Segoe UI", 11F);
+            lblUpgrade3Title.ForeColor = Color.White;
             lblUpgrade3Title.Location = new Point(15, 32);
             lblUpgrade3Title.Name = "lblUpgrade3Title";
             lblUpgrade3Title.Size = new Size(86, 20);
@@ -801,6 +871,7 @@
             // lblUpgrade3Lvl
             // 
             lblUpgrade3Lvl.AutoSize = true;
+            lblUpgrade3Lvl.ForeColor = Color.White;
             lblUpgrade3Lvl.Location = new Point(15, 58);
             lblUpgrade3Lvl.Name = "lblUpgrade3Lvl";
             lblUpgrade3Lvl.Size = new Size(24, 15);
@@ -810,6 +881,7 @@
             // lblUpgrade3Cost
             // 
             lblUpgrade3Cost.AutoSize = true;
+            lblUpgrade3Cost.ForeColor = Color.White;
             lblUpgrade3Cost.Location = new Point(15, 73);
             lblUpgrade3Cost.Name = "lblUpgrade3Cost";
             lblUpgrade3Cost.Size = new Size(34, 15);
@@ -818,12 +890,14 @@
             // 
             // btnUpgrade3
             // 
+            btnUpgrade3.BackColor = Color.Teal;
+            btnUpgrade3.ForeColor = Color.White;
             btnUpgrade3.Location = new Point(117, 32);
             btnUpgrade3.Name = "btnUpgrade3";
             btnUpgrade3.Size = new Size(114, 66);
             btnUpgrade3.TabIndex = 5;
             btnUpgrade3.Text = "Upgrade";
-            btnUpgrade3.UseVisualStyleBackColor = true;
+            btnUpgrade3.UseVisualStyleBackColor = false;
             btnUpgrade3.Click += btnUpgrade3_Click;
             // 
             // btnSave
@@ -839,6 +913,7 @@
             // 
             lblXPLvl.AutoSize = true;
             lblXPLvl.Font = new Font("Segoe UI", 15F);
+            lblXPLvl.ForeColor = Color.FromArgb(128, 128, 255);
             lblXPLvl.Location = new Point(24, 52);
             lblXPLvl.Name = "lblXPLvl";
             lblXPLvl.Size = new Size(51, 28);
@@ -849,6 +924,7 @@
             // 
             lblSus.AutoSize = true;
             lblSus.Font = new Font("Segoe UI", 15F);
+            lblSus.ForeColor = Color.IndianRed;
             lblSus.Location = new Point(27, 124);
             lblSus.Name = "lblSus";
             lblSus.Size = new Size(48, 28);
@@ -858,6 +934,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.FromArgb(128, 128, 255);
             label3.Location = new Point(40, 80);
             label3.Name = "label3";
             label3.Size = new Size(21, 15);
@@ -881,6 +958,7 @@
             // 
             // lblXPAmount
             // 
+            lblXPAmount.ForeColor = Color.FromArgb(128, 128, 255);
             lblXPAmount.Location = new Point(101, 83);
             lblXPAmount.Name = "lblXPAmount";
             lblXPAmount.Size = new Size(659, 23);
@@ -890,6 +968,7 @@
             // 
             // lblSusAmount
             // 
+            lblSusAmount.ForeColor = Color.IndianRed;
             lblSusAmount.Location = new Point(101, 148);
             lblSusAmount.Name = "lblSusAmount";
             lblSusAmount.Size = new Size(659, 23);
@@ -901,7 +980,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(784, 561);
             Controls.Add(lblSusAmount);
             Controls.Add(lblXPAmount);
