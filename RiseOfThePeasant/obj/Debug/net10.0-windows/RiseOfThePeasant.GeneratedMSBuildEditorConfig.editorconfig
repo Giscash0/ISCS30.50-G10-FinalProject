@@ -1,6 +1,6 @@
 is_global = true
 build_property.ApplicationManifest = 
-build_property.StartupObject = 
+build_property.StartupObject = RiseOfThePeasant.Program
 build_property.ApplicationDefaultFont = 
 build_property.ApplicationHighDpiMode = 
 build_property.ApplicationUseCompatibleTextRendering = 
@@ -16,7 +16,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RiseOfThePeasant
-build_property.ProjectDir = C:\Users\user\Desktop\RiseOfThePeasant\RiseOfThePeasant\
+build_property.ProjectDir = C:\Users\Johan\Documents\Ateneo\ISCS 30.50\FinalProject\RiseOfThePeasant\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

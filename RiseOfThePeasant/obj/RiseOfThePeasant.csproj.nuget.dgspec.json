@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\RiseOfThePeasant\\RiseOfThePeasant\\RiseOfThePeasant.csproj": {}
+    "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\RiseOfThePeasant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\RiseOfThePeasant\\RiseOfThePeasant\\RiseOfThePeasant.csproj": {
+    "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\RiseOfThePeasant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\RiseOfThePeasant\\RiseOfThePeasant\\RiseOfThePeasant.csproj",
+        "projectUniqueName": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\RiseOfThePeasant.csproj",
         "projectName": "RiseOfThePeasant",
-        "projectPath": "C:\\Users\\user\\Desktop\\RiseOfThePeasant\\RiseOfThePeasant\\RiseOfThePeasant.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\RiseOfThePeasant\\RiseOfThePeasant\\obj\\",
+        "projectPath": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\RiseOfThePeasant.csproj",
+        "packagesPath": "C:\\Users\\Johan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Johan\\Documents\\Ateneo\\ISCS 30.50\\FinalProject\\RiseOfThePeasant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Johan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

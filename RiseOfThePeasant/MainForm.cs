@@ -36,9 +36,12 @@ namespace RiseOfThePeasant
 
         // Floating text
         private List<FloatingText> floatingTexts = new List<FloatingText>();
+        private Button button1;
+        private Button button2;
+        private Button button3;
 
         // Timer
-        private Timer gameTimer;
+        private System.Windows.Forms.Timer gameTimer;
 
         public MainForm()
         {
@@ -132,7 +135,7 @@ namespace RiseOfThePeasant
 
         private void InitializeTimer()
         {
-            gameTimer = new Timer();
+            gameTimer = new System.Windows.Forms.Timer();
             gameTimer.Interval = 50; // 20 FPS
             gameTimer.Tick += GameTimer_Tick;
             gameTimer.Start();
@@ -313,6 +316,11 @@ namespace RiseOfThePeasant
             AddFloatingText("RESET", Color.Orange, new PointF(20, 490));
         }
         #endregion
+
+        private void InitializeComponent()
+        {
+
+        }
 
         [STAThread]
         static void Main()
