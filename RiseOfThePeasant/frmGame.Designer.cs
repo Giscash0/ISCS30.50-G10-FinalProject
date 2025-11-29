@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            pBarXP = new ProgressBar();
-            pBarSus = new ProgressBar();
+            xpBar = new ProgressBar();
+            susBar = new ProgressBar();
             lblMoney = new Label();
             btnWork = new Button();
             optNormal = new RadioButton();
@@ -49,7 +49,7 @@
             btnUpgrade6 = new Button();
             lblPoliceBribeAmount = new Label();
             lblPoliceBribeCost = new Label();
-            btnBribe1 = new Button();
+            btnPoliceBribe = new Button();
             tabNews = new TabPage();
             lblUpgrade7Description = new Label();
             lblUpgrade7Title = new Label();
@@ -63,7 +63,7 @@
             btnUpgrade8 = new Button();
             lblNewsBribeAmount = new Label();
             lblNewsBribeCost = new Label();
-            btnBribe2 = new Button();
+            btnNewsBribe = new Button();
             tabTrolls = new TabPage();
             lblUpgrade10Description = new Label();
             lblUpgrade10Title = new Label();
@@ -100,9 +100,8 @@
             btnUpgrade3 = new Button();
             btnSave = new Button();
             lblXPLvl = new Label();
-            lblSusLvl = new Label();
+            lblSus = new Label();
             label3 = new Label();
-            label4 = new Label();
             btnLoad = new Button();
             tmrProcess = new System.Windows.Forms.Timer(components);
             lblXPAmount = new Label();
@@ -116,19 +115,20 @@
             tabHelper.SuspendLayout();
             SuspendLayout();
             // 
-            // pBarXP
+            // xpBar
             // 
-            pBarXP.Location = new Point(101, 55);
-            pBarXP.Name = "pBarXP";
-            pBarXP.Size = new Size(659, 25);
-            pBarXP.TabIndex = 0;
+            xpBar.Location = new Point(101, 55);
+            xpBar.Maximum = 10;
+            xpBar.Name = "xpBar";
+            xpBar.Size = new Size(659, 25);
+            xpBar.TabIndex = 0;
             // 
-            // pBarSus
+            // susBar
             // 
-            pBarSus.Location = new Point(101, 127);
-            pBarSus.Name = "pBarSus";
-            pBarSus.Size = new Size(659, 25);
-            pBarSus.TabIndex = 1;
+            susBar.Location = new Point(101, 127);
+            susBar.Name = "susBar";
+            susBar.Size = new Size(659, 25);
+            susBar.TabIndex = 1;
             // 
             // lblMoney
             // 
@@ -137,7 +137,7 @@
             lblMoney.Name = "lblMoney";
             lblMoney.Size = new Size(216, 76);
             lblMoney.TabIndex = 2;
-            lblMoney.Text = "$10000";
+            lblMoney.Text = "$0";
             lblMoney.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnWork
@@ -199,7 +199,7 @@
             tabPolice.Controls.Add(btnUpgrade6);
             tabPolice.Controls.Add(lblPoliceBribeAmount);
             tabPolice.Controls.Add(lblPoliceBribeCost);
-            tabPolice.Controls.Add(btnBribe1);
+            tabPolice.Controls.Add(btnPoliceBribe);
             tabPolice.Location = new Point(4, 24);
             tabPolice.Name = "tabPolice";
             tabPolice.Padding = new Padding(3);
@@ -320,15 +320,15 @@
             lblPoliceBribeCost.TabIndex = 11;
             lblPoliceBribeCost.Text = "Cost:";
             // 
-            // btnBribe1
+            // btnPoliceBribe
             // 
-            btnBribe1.Location = new Point(73, 18);
-            btnBribe1.Name = "btnBribe1";
-            btnBribe1.Size = new Size(112, 51);
-            btnBribe1.TabIndex = 10;
-            btnBribe1.Text = "BRIBE";
-            btnBribe1.UseVisualStyleBackColor = true;
-            btnBribe1.Click += btnBribe1_Click;
+            btnPoliceBribe.Location = new Point(73, 18);
+            btnPoliceBribe.Name = "btnPoliceBribe";
+            btnPoliceBribe.Size = new Size(112, 51);
+            btnPoliceBribe.TabIndex = 10;
+            btnPoliceBribe.Text = "BRIBE";
+            btnPoliceBribe.UseVisualStyleBackColor = true;
+            btnPoliceBribe.Click += btnPoliceBribe_Click;
             // 
             // tabNews
             // 
@@ -344,7 +344,7 @@
             tabNews.Controls.Add(btnUpgrade8);
             tabNews.Controls.Add(lblNewsBribeAmount);
             tabNews.Controls.Add(lblNewsBribeCost);
-            tabNews.Controls.Add(btnBribe2);
+            tabNews.Controls.Add(btnNewsBribe);
             tabNews.Location = new Point(4, 24);
             tabNews.Name = "tabNews";
             tabNews.Padding = new Padding(3);
@@ -465,15 +465,15 @@
             lblNewsBribeCost.TabIndex = 26;
             lblNewsBribeCost.Text = "Cost:";
             // 
-            // btnBribe2
+            // btnNewsBribe
             // 
-            btnBribe2.Location = new Point(70, 16);
-            btnBribe2.Name = "btnBribe2";
-            btnBribe2.Size = new Size(112, 51);
-            btnBribe2.TabIndex = 25;
-            btnBribe2.Text = "BRIBE";
-            btnBribe2.UseVisualStyleBackColor = true;
-            btnBribe2.Click += btnBribe2_Click;
+            btnNewsBribe.Location = new Point(70, 16);
+            btnNewsBribe.Name = "btnNewsBribe";
+            btnNewsBribe.Size = new Size(112, 51);
+            btnNewsBribe.TabIndex = 25;
+            btnNewsBribe.Text = "BRIBE";
+            btnNewsBribe.UseVisualStyleBackColor = true;
+            btnNewsBribe.Click += btnNewsBribe_Click;
             // 
             // tabTrolls
             // 
@@ -845,15 +845,15 @@
             lblXPLvl.TabIndex = 10;
             lblXPLvl.Text = "Lvl 0";
             // 
-            // lblSusLvl
+            // lblSus
             // 
-            lblSusLvl.AutoSize = true;
-            lblSusLvl.Font = new Font("Segoe UI", 15F);
-            lblSusLvl.Location = new Point(24, 124);
-            lblSusLvl.Name = "lblSusLvl";
-            lblSusLvl.Size = new Size(51, 28);
-            lblSusLvl.TabIndex = 11;
-            lblSusLvl.Text = "Lvl 0";
+            lblSus.AutoSize = true;
+            lblSus.Font = new Font("Segoe UI", 15F);
+            lblSus.Location = new Point(27, 124);
+            lblSus.Name = "lblSus";
+            lblSus.Size = new Size(48, 28);
+            lblSus.TabIndex = 11;
+            lblSus.Text = "SUS";
             // 
             // label3
             // 
@@ -863,15 +863,6 @@
             label3.Size = new Size(21, 15);
             label3.TabIndex = 12;
             label3.Text = "XP";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(34, 152);
-            label4.Name = "label4";
-            label4.Size = new Size(27, 15);
-            label4.TabIndex = 13;
-            label4.Text = "SUS";
             // 
             // btnLoad
             // 
@@ -903,7 +894,7 @@
             lblSusAmount.Name = "lblSusAmount";
             lblSusAmount.Size = new Size(659, 23);
             lblSusAmount.TabIndex = 16;
-            lblSusAmount.Text = "0/10";
+            lblSusAmount.Text = "0/100";
             lblSusAmount.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmGame
@@ -915,9 +906,8 @@
             Controls.Add(lblSusAmount);
             Controls.Add(lblXPAmount);
             Controls.Add(btnLoad);
-            Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(lblSusLvl);
+            Controls.Add(lblSus);
             Controls.Add(lblXPLvl);
             Controls.Add(btnSave);
             Controls.Add(tabControl2);
@@ -926,8 +916,8 @@
             Controls.Add(optNormal);
             Controls.Add(btnWork);
             Controls.Add(lblMoney);
-            Controls.Add(pBarSus);
-            Controls.Add(pBarXP);
+            Controls.Add(susBar);
+            Controls.Add(xpBar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "frmGame";
@@ -950,8 +940,8 @@
 
         #endregion
 
-        private ProgressBar pBarXP;
-        private ProgressBar pBarSus;
+        private ProgressBar xpBar;
+        private ProgressBar susBar;
         private Label lblMoney;
         private Button btnWork;
         private RadioButton optNormal;
@@ -965,9 +955,8 @@
         private Button btnSave;
         private TabPage tabTrolls;
         private Label lblXPLvl;
-        private Label lblSusLvl;
+        private Label lblSus;
         private Label label3;
-        private Label label4;
         private Button btnLoad;
         private Label lblUpgrade1Cost;
         private Button btnUpgrade1;
@@ -991,7 +980,7 @@
         private Button btnUpgrade2;
         private Label lblPoliceBribeAmount;
         private Label lblPoliceBribeCost;
-        private Button btnBribe1;
+        private Button btnPoliceBribe;
         private Label lblUpgrade5Description;
         private Label lblUpgrade5Title;
         private Label lblUpgrade5Lvl;
@@ -1014,7 +1003,7 @@
         private Button btnUpgrade8;
         private Label lblNewsBribeAmount;
         private Label lblNewsBribeCost;
-        private Button btnBribe2;
+        private Button btnNewsBribe;
         private Label lblUpgrade10Description;
         private Label lblUpgrade10Title;
         private Label lblUpgrade10Lvl;

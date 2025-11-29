@@ -329,28 +329,4 @@ namespace RiseOfThePeasant
             Application.Run(new MainForm());
         }
     }
-
-    [Serializable]
-    public class GameData
-    {
-        public double Money { get; set; }
-        public int Level { get; set; }
-        public double XP { get; set; }
-        public double Suspicion { get; set; }
-    }
-
-    public class FloatingText
-    {
-        public string Text { get; set; }
-        public Color Color { get; set; }
-        public PointF Position { get; set; }
-        public Font Font { get; set; }
-        public float Opacity { get; set; }
-
-        public void Update()
-        {
-            Position = new PointF(Position.X, Position.Y - 0.5f);
-            Opacity -= 0.02f;
-        }
-    }
 }
